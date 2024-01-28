@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link href="../src/output.css" rel="stylesheet" />
 </head>
-<body style="background-image: url(../Assets/EvenBG.png);">
+<body style="background-image: url(../Assets/EightBallBG2.jpg);">
   <nav class="bg-slate-500">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
@@ -103,10 +107,30 @@
         </div>
       </div>
 </nav>
-    <h1 id="nameOutput"></h1>
-    <input class="flex justify-center " id ="inputName">
-    <button class=" justify-center "  style="height: 30px;" id="enterBtn">CLICK</button>
+<div class="p-8">
+  <h1 class="text-center text-5xl mt-10 main-title">Say Hello</h1>
+
+  <div class="text-center mt-10 home-head">
+      <h2>Type Question</h2>
   </div>
+</div>
+
+<div class="flex justify-center p-5">
+  <div>
+      <div class="grid xs:grid-cols sm:grid-cols-2 ">
+          <p  class="mb-2 font-medium  text-black text-3xl font-inria mt-2 pl-10">Enter a Question:</p>
+          <input type="text" id ="inputName" class="bg-gray-50  border-gray-300 text-gray-900 rounded-lg w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-sm" placeholder="Question" required>
+      </div>
+    </div>
+</div>        
+<div class="text-center mt-10">
+<button id="enterBtn" class="text-black color-pink color-pink-focus font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none" type="button">
+  Click
+</button>
+</div>
+<div class="container mx-auto flex justify-center mt-10">
+  <h1 class="text-5xl text-black" id="nameOutput"></h1>
+      </div > 
   <script type="module" src="../scripts/EightBall.js"></script>
 </body>
 </html>

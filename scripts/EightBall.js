@@ -8,7 +8,6 @@ let enterBtn = document.getElementById("enterBtn")
 
 async function GetNameApi() {
  const promise = await fetch(`https://allforonebria.azurewebsites.net/api/Minich9/MagicEight/${inputName.value}`)
- 
  const data = await promise.text();
  console.log(data);
  return data;

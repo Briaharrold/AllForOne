@@ -1,9 +1,9 @@
-let txtOutput = document.getElementById("inputNum");
+let txtOutput = document.getElementById("outPut");
 let num = document.getElementById("inputnum");
 let enterBtn = document.getElementById("enterBtn");
 
 async function GetNameApi(num) {
-    const promise = await fetch(`https://allforonebria.azurewebsites.net/api/Minich6/OddOrEven/${num.value}`)
+    const promise = await fetch(`https://allforonebria.azurewebsites.net/api/Minich6/OddOrEven/${num}`)
     const data = await promise.text();
     console.log(data);
     return data;
