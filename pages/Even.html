@@ -230,22 +230,49 @@
         </div>
       </div>
     </nav>
-    <section>
-      <div class="gap-1 grid sm:grid-cols-6 flex justify-center">
-        <div class="p-4">
-          <input
-            class="px-10"
-            type="text"
-            id="inputNum"
-            placeholder="Type Number"
-          />
-        </div>
-        <div class="p-4"><h1 class="text-white" id="outPut"></h1></div>
-        <div class="p-4">
-          <button id="enterBtn" class="text-white">CLICK</button>
-        </div>
+  
+
+
+    <div class="p-8">
+      <h1 class="text-center text-5xl mt-10 main-title">Even oor Odd</h1>
+
+      <div class="text-center mt-10 home-head">
+          <h2>Type Name</h2>
       </div>
-    </section>
+    </div>
+
+    <div class="flex justify-center p-5">
+      <div>
+          <div class="grid xs:grid-cols sm:grid-cols-2 ">
+              <p  class="mb-2 font-medium  text-black text-3xl font-inria mt-2 pl-10">Enter Number:</p>
+              <input type="text" id ="inputName" class="bg-gray-50  border-gray-300 text-gray-900 rounded-lg w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-sm" placeholder="Name" required>
+          </div>
+        </div>
+    </div>        
+
+<!-- drawer init and toggle -->
+<div class="text-center mt-10">
+    <button id="enterBtn" class="text-black color-pink color-pink-focus font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none" type="button">
+      Click
+    </button>
+ </div>
+
+ 
+ 
+    
+    <!-- bg-cover md:bg-contain  flex justify-center -->
+    <div class="container mx-auto flex justify-center mt-10">
+      <h1 class="text-5xl text-black" id="nameOutput"></h1>
+          
+             
+               
+            
+   
+            
+      
+  
+           
+          </div >   
     <script src="../scripts/evenOrOdd.js"></script>
   </body>
 </html>

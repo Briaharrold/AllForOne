@@ -1,22 +1,21 @@
-let txtOutput = document.getElementById("outPut");
-let num = document.getElementById("inputnum");
-let enterBtn = document.getElementById("enterBtn");
 
-async function GetNameApi(num) {
-    const promise = await fetch(`https://allforonebria.azurewebsites.net/api/Minich6/OddOrEven/${num}`)
+   let nameOutput = document.getElementById("nameOutput");
+   let inputName = document.getElementById("inputName");
+   let enterBtn = document.getElementById("enterBtn")
+   //declare all vaules need to start process
+   //unserinput to get name
+   //output inserted name 
+   //on click taking data and put in api
+   
+   async function GetNameApi() {
+    const promise = await fetch(`https://allforonebria.azurewebsites.net/api/Minich6/OddOrEven/${inputName.value}`)
     const data = await promise.text();
     console.log(data);
     return data;
    
    }
    enterBtn.addEventListener('click', async function(e){
-   
-       if(num.value !='')
-       {
-           const output = await GetNameApi(num.value);
-           txtOutput.textContent = output;
-       }else{
-           txtOutput.innerText="NOt Failed Input" ;
-       }
-     
+     const output = await GetNameApi(inputName.value);
+       nameOutput.textContent = output;
    })
+   
